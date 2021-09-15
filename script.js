@@ -11,6 +11,7 @@ function getPassword(){
     password += chars.substring(randomNumber,randomNumber+1);
   }
   document.getElementById("password").value = password;
+  alertBox.innerHTML = "Sua Senha foi copiada : "+ password
 }
 
 function copia(){
@@ -18,6 +19,9 @@ function copia(){
   copiaDaSenha.select();
   document.execCommand('copy');
   alertBox.classList.toggle('active');
+  setTimeout(function(){
+    alertBox.classList.toggle('active');
+  },2000)
 }
 
 
