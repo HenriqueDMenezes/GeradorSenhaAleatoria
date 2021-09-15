@@ -15,10 +15,11 @@ function getPassword(){
 
 function copia(){
   var copiaDaSenha = document.getElementById("password");
-  copiaDaSenha.Select();
-  copiaDaSenha.setSelectionRange(0,9999);
-  document.execCommand('copia');
+  copiaDaSenha.select();
+  document.execCommand('copy');
   alertBox.classList.toggle('active');
 }
+
+
 
 
