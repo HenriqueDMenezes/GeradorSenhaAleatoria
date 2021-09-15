@@ -6,7 +6,7 @@ function getPassword(){
   var passwordLength = 16;
   var password = "";
 
-  for(var i = 0;i<17;i++){
+  for(var i = 0;i<=passwordLength;i++){
     var randomNumber = Math.floor(Math.random() * chars.length);
     password += chars.substring(randomNumber,randomNumber+1);
   }
